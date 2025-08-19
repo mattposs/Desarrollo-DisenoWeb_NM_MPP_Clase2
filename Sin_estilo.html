@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sitio base para practicar CSS</title>
+  <meta name="description" content="Plantilla mínima en HTML5 sin estilos para practicar CSS.">
+</head>
+<body>
+
+  <!-- Encabezado del sitio -->
+  <header>
+    <h1>Mi sitio básico</h1>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#articulos">Artículos</a></li>
+        <li><a href="#tabla">Tabla</a></li>
+        <li><a href="#formulario">Formulario</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main id="inicio">
+    <section>
+      <h2>Introducción</h2>
+      <p>
+        Esta es una página sin estilos. La idea es que practiques CSS agregando
+        colores, tipografías, tamaños, márgenes, posiciones y diseños (flex, grid).
+      </p>
+      <p>
+        Puedes duplicar secciones, cambiar textos y agregar clases o ids cuando lo necesites.
+      </p>
+    </section>
+
+    <section id="articulos">
+      <h2>Artículos</h2>
+
+      <article>
+        <h3>Primer artículo</h3>
+        <p>
+          Un párrafo de ejemplo para aplicar estilos de texto. Prueba con
+          <strong>negritas</strong>, <em>itálicas</em> y <a href="#!">enlaces</a>.
+        </p>
+        <ul>
+          <li>Elemento de lista uno</li>
+          <li>Elemento de lista dos</li>
+          <li>Elemento de lista tres</li>
+        </ul>
+        <p>
+          Publicado el <time datetime="2025-08-19">19/08/2025</time>.
+        </p>
+      </article>
+
+      <article>
+        <h3>Segundo artículo</h3>
+        <p>
+          Otro contenido de ejemplo para practicar márgenes, padding y layout.
+        </p>
+        <ol>
+          <li>Paso 1</li>
+          <li>Paso 2</li>
+          <li>Paso 3</li>
+        </ol>
+      </article>
+    </section>
+
+    <section>
+      <h2>Imagen y figura</h2>
+      <figure>
+        <!-- Pon una imagen en /imagenes/ y ajusta el nombre del archivo -->
+        <img src="imagenes/ejemplo.jpg" alt="Descripción breve de la imagen">
+        <figcaption>Pie de imagen (figcaption) para practicar estilos.</figcaption>
+      </figure>
+    </section>
+
+    <section id="tabla">
+      <h2>Tabla de ejemplo</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Item A</td>
+            <td>2</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>Item B</td>
+            <td>1</td>
+            <td>250</td>
+          </tr>
+          <tr>
+            <td>Item C</td>
+            <td>5</td>
+            <td>40</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Total</td>
+            <td>8</td>
+            <td>390</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <aside>
+      <h2>Barra lateral</h2>
+      <p>Contenido secundario para practicar diseño de columnas.</p>
+    </aside>
+
+    <section id="formulario">
+      <h2>Formulario de contacto</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" required>
+        </div>
+        <div>
+          <label for="email">Correo</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div>
+          <label for="motivo">Motivo</label>
+          <select id="motivo" name="motivo">
+            <option value="consulta">Consulta</option>
+            <option value="soporte">Soporte</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div>
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+        </div>
+        <div>
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpiar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Pie del sitio -->
+  <footer id="contacto">
+    <p>© 2025 — Sitio base para practicar CSS</p>
+    <address>
+      Escribime a <a href="mailto:tu-correo@ejemplo.com">tu-correo@ejemplo.com</a>
+    </address>
+  </footer>
+
+</body>
+</html>
