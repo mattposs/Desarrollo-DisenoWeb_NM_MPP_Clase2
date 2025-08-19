@@ -1,106 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Fan page de The IT Crowd — Capítulos destacados" />
   <title>Capítulos — The IT Crowd</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: white;
-      color: #222;
-      margin: 0;
+    :root{
+      --azul:#003366; --amarillo:#FFD700; --morado:#8B008B; --gris-card:#f9f9f9;
     }
-    header {
-      background-color: #003366; /* Azul */
-      color: #fff;
-      padding: 10px 20px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 1.5rem;
-    }
-    header span {
-      color: #FFD700; /* Amarillo */
-      font-weight: bold;
-    }
-    nav {
-      margin-top: 8px;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-right: 15px;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: #f9f9f9;
-      border: 2px solid #003366; /* Azul */
-      border-radius: 12px;
-      padding: 16px;
-      text-align: center;
-    }
-    h2 {
-      color: #8B008B; /* Morado */
-      margin-bottom: 10px;
-    }
-    iframe {
-      width: 100%;
-      height: 200px;
-      border-radius: 10px;
-      border: 3px solid #FFD700; /* Amarillo */
-    }
-    p {
-      font-weight: bold;
-      color: #006400; /* Verde */
-    }
-    footer {
-      margin-top: 24px;
-      text-align: center;
-      color: #fff;
-      background: #003366; /* Azul */
-      padding: 18px;
-    }
+    *{box-sizing:border-box}
+    body{font-family:Arial,sans-serif;background:#fff;color:#222;margin:0}
+    header{background:var(--azul);color:#fff;padding:16px 0}
+    .wrap{max-width:900px;margin:0 auto;padding:0 16px}
+    header h1{margin:0 0 8px;text-align:center;font-size:1.6rem;line-height:1.2}
+    .marca{color:var(--amarillo);font-weight:700}
+    nav{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+    nav a{color:#fff;text-decoration:none;font-weight:700;padding:6px 10px;border-radius:8px}
+    nav a:hover{text-decoration:underline}
+    main{max-width:900px;margin:24px auto;padding:0 16px}
+    .card{background:var(--gris-card);border:2px solid var(--azul);border-radius:12px;padding:16px}
+    h2{margin:0 0 12px;color:var(--morado)}
+    ul{margin:0;padding-left:18px}
+    li{margin:6px 0}
+    footer{margin-top:24px;text-align:center;color:#fff;background:var(--azul);padding:18px}
   </style>
 </head>
 <body>
   <header>
-    <h1>Capítulos de <span>The IT Crowd</span></h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="personajes.html">Personajes</a>
-      <a href="capitulos.html">Capítulos</a>
-    </nav>
+    <div class="wrap">
+      <h1>Capítulos — <span class="marca">The IT Crowd</span></h1>
+      <nav aria-label="Navegación principal">
+        <a href="./index.html">Inicio</a>
+        <a href="./personajes.html">Personajes</a>
+        <a href="./capitulos.html" aria-current="page">Capítulos</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <div class="card">
-      <h2>Capítulo 1</h2>
-      <iframe src="https://www.youtube.com/embed/erRNcPgh-FA" title="Capítulo 1 - The IT Crowd" frameborder="0" allowfullscreen></iframe>
-      <p>Inicio de la serie, presentando a Moss, Roy y Jen.</p>
-    </div>
-
-    <div class="card">
-      <h2>Capítulo 2</h2>
-      <iframe src="https://www.youtube.com/embed/Z0dvAy1puIE" title="Capítulo 2 - The IT Crowd" frameborder="0" allowfullscreen></iframe>
-      <p>La oficina se enfrenta a un problema inesperado.</p>
-    </div>
+    <section class="card">
+      <h2>Selección de episodios</h2>
+      <ul>
+        <li>S01E01 — Yesterday’s Jam</li>
+        <li>S01E02 — Calamity Jen</li>
+        <li>S02E01 — The Work Outing</li>
+        <li>S02E06 — Men Without Women</li>
+        <li>S03E04 — The Speech</li>
+        <li>S04E01 — Jen the Fredo</li>
+        <li>Special — The Internet Is Coming</li>
+      </ul>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 • Fanpage The IT Crowd</p>
+    <p>© 2025 • Derechos reservados</p>
   </footer>
 </body>
 </html>
-
