@@ -3,123 +3,32 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Fan page de The IT Crowd — Personaje: Matt, especialista en ciberseguridad." />
+  <meta name="description" content="Fan page de The IT Crowd — Inicio" />
   <title>Fan Page — The IT Crowd</title>
   <style>
-    /* Paleta aplicada + fondo blanco */
     :root{
-      --azul:#003366;
-      --amarillo:#FFD700;
-      --morado:#8B008B;
-      --verde:#006400;
-      --rojo:#FF0000;
-      --gris-card:#f9f9f9;
+      --azul:#003366; --amarillo:#FFD700; --morado:#8B008B; --verde:#006400; --rojo:#FF0000; --gris-card:#f9f9f9;
     }
     *{box-sizing:border-box}
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #fff;
-      color: #222;
-      margin: 0;
-    }
-
-    /* Header + nav */
-    header {
-      background-color: var(--azul);
-      color: #fff;
-      padding: 16px 0;
-    }
-    .wrap {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 0 16px;
-    }
-    header h1 {
-      margin: 0 0 8px;
-      text-align: center;
-      font-size: 1.6rem;
-      line-height: 1.2;
-    }
-    header .marca { color: var(--amarillo); font-weight: 700; }
-
-    nav {
-      display: flex;
-      gap: 16px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 700;
-      padding: 6px 10px;
-      border-radius: 8px;
-      outline: none;
-    }
-    nav a:hover { text-decoration: underline; }
-    nav a:focus-visible {
-      outline: 3px solid #fff;
-      outline-offset: 2px;
-      background: rgba(255,255,255,.08);
-    }
-
-    /* Layout principal */
-    main {
-      max-width: 900px;
-      margin: 24px auto;
-      padding: 0 16px;
-      display: grid;
-      gap: 20px;
-      align-items: start;
-    }
-    @media (min-width: 760px){
-      main { grid-template-columns: 1fr 1fr; }
-    }
-
-    /* Tarjetas y tipografía */
-    .card {
-      background: var(--gris-card);
-      border: 2px solid var(--azul);
-      border-radius: 12px;
-      padding: 16px;
-    }
-    figure { margin: 0; }
-    img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 10px;
-      border: 3px solid var(--amarillo);
-    }
-    figcaption { margin-top: 8px; color: #555; }
-
-    h2 {
-      margin: 0 0 8px;
-      color: var(--morado);
-      font-size: 1.25rem;
-    }
-    .role {
-      font-weight: 700;
-      color: var(--verde);
-      margin: 0 0 10px;
-    }
-    .tag {
-      display: inline-block;
-      background: var(--rojo);
-      color: #fff;
-      padding: 4px 10px;
-      border-radius: 999px;
-      font-size: 0.9rem;
-      margin-top: 6px;
-    }
-
-    footer {
-      margin-top: 24px;
-      text-align: center;
-      color: #fff;
-      background: var(--azul);
-      padding: 18px;
-    }
+    body{font-family:Arial,sans-serif;background:#fff;color:#222;margin:0}
+    header{background:var(--azul);color:#fff;padding:16px 0}
+    .wrap{max-width:900px;margin:0 auto;padding:0 16px}
+    header h1{margin:0 0 8px;text-align:center;font-size:1.6rem;line-height:1.2}
+    .marca{color:var(--amarillo);font-weight:700}
+    nav{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+    nav a{color:#fff;text-decoration:none;font-weight:700;padding:6px 10px;border-radius:8px}
+    nav a:hover{text-decoration:underline}
+    nav a:focus-visible{outline:3px solid #fff;outline-offset:2px;background:rgba(255,255,255,.08)}
+    main{max-width:900px;margin:24px auto;padding:0 16px;display:grid;gap:20px;align-items:start}
+    @media (min-width:760px){main{grid-template-columns:1fr 1fr}}
+    .card{background:var(--gris-card);border:2px solid var(--azul);border-radius:12px;padding:16px}
+    figure{margin:0}
+    img{width:100%;height:auto;display:block;border-radius:10px;border:3px solid var(--amarillo)}
+    figcaption{margin-top:8px;color:#555}
+    h2{margin:0 0 8px;color:var(--morado);font-size:1.25rem}
+    .role{font-weight:700;color:var(--verde);margin:0 0 10px}
+    .tag{display:inline-block;background:var(--rojo);color:#fff;padding:4px 10px;border-radius:999px;font-size:.9rem;margin-top:6px}
+    footer{margin-top:24px;text-align:center;color:#fff;background:var(--azul);padding:18px}
   </style>
 </head>
 <body>
@@ -127,9 +36,9 @@
     <div class="wrap">
       <h1>Mi serie favorita: <span class="marca">The IT Crowd</span></h1>
       <nav aria-label="Navegación principal">
-        <a href="index.html">Inicio</a>
-        <a href="personajes.html">Personajes</a>
-        <a href="capitulos.html">Capítulos</a>
+        <a href="./index.html">Inicio</a>
+        <a href="./personajes.html">Personajes</a>
+        <a href="./capitulos.html">Capítulos</a>
       </nav>
     </div>
   </header>
@@ -137,8 +46,7 @@
   <main>
     <section class="card">
       <figure>
-        <!-- Ruta a tu archivo local -->
-        <img src="Imagenes/Matt_ITcrowd.png" alt="Matt, especialista en ciberseguridad, estilo The IT Crowd">
+        <img src="./imagenes/Matt_ITcrowd.png" alt="Matt, especialista en ciberseguridad, estilo The IT Crowd">
         <figcaption>Matt — El cortafuegos humano de Reynholm Industries</figcaption>
       </figure>
     </section>
@@ -151,8 +59,8 @@
         Matt es tan divertido como estricto con la seguridad.
       </p>
       <p>
-        Vive para cerrar vulnerabilidades, aplicar contraseñas imposibles y recordarle a Jen —con bromas constantes— que los post‑its
-        no son un método de autenticación. Sarcástico y veloz para responder, es el “cortafuegos humano”.
+        Vive para cerrar vulnerabilidades, aplicar contraseñas imposibles y recordarle a Jen que los post‑its no son un método de autenticación.
+        Sarcástico y veloz para responder, es el “cortafuegos humano”.
       </p>
       <span class="tag">Seguridad</span>
       <span class="tag">Humor ácido</span>
@@ -164,5 +72,3 @@
   </footer>
 </body>
 </html>
-
-
