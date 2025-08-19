@@ -2,162 +2,90 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Fan page de The IT Crowd — Personajes" />
   <title>Personajes — The IT Crowd</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: white;
-      color: #222;
-      margin: 0;
+    :root{
+      --azul:#003366; --amarillo:#FFD700; --morado:#8B008B; --verde:#006400; --rojo:#FF0000; --gris-card:#f9f9f9;
     }
-    header {
-      background-color: #003366; /* Azul oscuro */
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
-    nav {
-      margin-top: 10px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 0 10px;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-    section {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    article {
-      border: 2px solid #003366; /* Azul */
-      border-radius: 10px;
-      padding: 10px;
-      background-color: #f9f9f9;
-    }
-    article img {
-      width: 100%;
-      border-radius: 8px;
-      border: 3px solid #FFD700; /* Amarillo */
-    }
-    h2 {
-      color: #8B008B; /* Morado */
-      margin-bottom: 5px;
-    }
-    p.role {
-      font-weight: bold;
-      color: #006400; /* Verde oscuro */
-    }
-    p.tags {
-      color: white;
-      background-color: #FF0000; /* Rojo */
-      padding: 4px;
-      border-radius: 4px;
-      display: inline-block;
-      margin-top: 5px;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background-color: #003366; /* Azul */
-      color: white;
-      margin-top: 20px;
-    }
+    *{box-sizing:border-box}
+    body{font-family:Arial,sans-serif;background:#fff;color:#222;margin:0}
+    header{background:var(--azul);color:#fff;padding:16px 0}
+    .wrap{max-width:1000px;margin:0 auto;padding:0 16px}
+    header h1{margin:0 0 8px;text-align:center;font-size:1.6rem;line-height:1.2}
+    .marca{color:var(--amarillo);font-weight:700}
+    nav{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+    nav a{color:#fff;text-decoration:none;font-weight:700;padding:6px 10px;border-radius:8px}
+    nav a:hover{text-decoration:underline}
+    main{max-width:1000px;margin:24px auto;padding:0 16px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+    .card{background:var(--gris-card);border:2px solid var(--azul);border-radius:12px;padding:16px;display:flex;flex-direction:column}
+    figure{margin:0}
+    img{width:100%;height:auto;display:block;border-radius:10px;border:3px solid var(--amarillo)}
+    h2{margin:10px 0 6px;color:var(--morado);font-size:1.1rem}
+    p{margin:0 0 8px}
+    footer{margin-top:24px;text-align:center;color:#fff;background:var(--azul);padding:18px}
   </style>
 </head>
 <body>
   <header>
     <div class="wrap">
-      <h1>Personajes <span style="color:#FFD700">The IT Crowd</span></h1>
+      <h1>Personajes — <span class="marca">The IT Crowd</span></h1>
       <nav aria-label="Navegación principal">
-        <a href="index.html">Inicio</a>
-        <a href="personajes.html">Personajes</a>
-        <a href="capitulos.html">Capítulos</a>
+        <a href="./index.html">Inicio</a>
+        <a href="./personajes.html" aria-current="page">Personajes</a>
+        <a href="./capitulos.html">Capítulos</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section>
-      <article>
-        <img src="Imagenes/Matt_ITcrowd.png" alt="Matt">
-        <h2>Matt</h2>
-        <p class="role">Especialista en Ciberseguridad</p>
-        <p>El guardián implacable de la red en Reynholm Industries. Con buzo a rayas, gafas oscuras
-          y café en mano, es tan divertido como estricto: vive cerrando vulnerabilidades, imponiendo
-          contraseñas imposibles y recordándole a Jen (con bromas constantes) que los post-its no son
-          autenticación. Sarcástico y rápido para responder, es el “cortafuegos humano”.
-        </p>
-        <p class="tags">Seguridad | Humor ácido</p>
-      </article>
-
-      <article>
-        <img src="Imagenes/Maurice Moss.jpg" alt="Maurice Moss">
-        <h2>Maurice Moss</h2>
-        <p class="role">Soporte Técnico • Inventor accidental</p>
-        <p>Brillante y metódico, domina hardware, redes y manuales que nadie leyó. Socialmente literal,
-          ingenia soluciones rarísimas que funcionan (casi siempre). Su frase favorita: “Lo dice el manual”.
-        </p>
-        <p class="tags">Redes | Gadgets</p>
-      </article>
-
-      <article>
-        <img src="Imagenes/Roy Trenneman.jpg" alt="Roy Trenneman">
+    <section class="grid">
+      <article class="card">
+        <figure>
+          <img src="./imagenes/roy.jpg" alt="Roy Trenneman">
+        </figure>
         <h2>Roy Trenneman</h2>
-        <p class="role">Helpdesk • Maestro del “¿Probaste apagarlo y encenderlo?”</p>
-        <p>Irónico, quejoso y encantador, es el rey de los tickets interminables. Sufre con impresoras y usuarios,
-          pero cuando importa, encuentra el parche que salva el día (y su siesta).
-        </p>
-        <p class="tags">Soporte | Sarcasmo</p>
+        <p>Soporte técnico con actitud sarcástica. Su frase célebre: “¿Probaste apagarlo y volverlo a encender?”.</p>
       </article>
 
-      <article>
-        <img src="Imagenes/Jen Barber.jpg" alt="Jen Barber">
+      <article class="card">
+        <figure>
+          <img src="./imagenes/moss.jpg" alt="Maurice Moss">
+        </figure>
+        <h2>Maurice Moss</h2>
+        <p>Genio socialmente torpe. Ama los manuales, los cables ordenados y las soluciones exactas.</p>
+      </article>
+
+      <article class="card">
+        <figure>
+          <img src="./imagenes/jen.jpg" alt="Jen Barber">
+        </figure>
         <h2>Jen Barber</h2>
-        <p class="role">Gerente de Relaciones • Jefa del equipo</p>
-        <p>Carismática y resolutiva, traduce “cosas de IT” al mundo real. No es técnica, pero consigue recursos,
-          negocia plazos imposibles y mantiene a Moss, Roy y Matt enfocados (o lo intenta).
-        </p>
-        <p class="tags">Gestión | Comunicación</p>
+        <p>Jefa del departamento de IT (sin saber de IT). Maestra del “account management”.</p>
       </article>
 
-      <article>
-        <img src="Imagenes/Richmond Avenal.jpg" alt="Richmond Avenal">
+      <article class="card">
+        <figure>
+          <img src="./imagenes/richmond.jpg" alt="Richmond Avenal">
+        </figure>
         <h2>Richmond Avenal</h2>
-        <p class="role">Consultor… desde el sótano</p>
-        <p>Enigmático y gótico, aparece cuando menos lo esperan con observaciones extrañamente acertadas.
-          Nadie sabe su horario ni su puesto exacto, pero todos valoran su consejo raro.
-        </p>
-        <p class="tags">Misterio | Sóta—¿hola?</p>
+        <p>Gótico que vive en el cuarto del servidor. Misterioso, filosófico y… inesperadamente útil.</p>
       </article>
 
-      <article>
-        <img src="Imagenes/Douglas Reynholm.jpg" alt="Douglas Reynholm">
+      <article class="card">
+        <figure>
+          <img src="./imagenes/douglas.jpg" alt="Douglas Reynholm">
+        </figure>
         <h2>Douglas Reynholm</h2>
-        <p class="role">Director de Reynholm Industries</p>
-        <p>Excéntrico y exagerado, mezcla decisiones impulsivas con ideas millonarias (y otras no tanto).
-          Cuando exige “innovación”, el equipo de IT se prepara para lo inesperado.
-        </p>
-        <p class="tags">Dirección | Caos creativo</p>
+        <p>Excéntrico jefe de la empresa. Carismático, impredecible y siempre al borde del papelón.</p>
       </article>
     </section>
   </main>
 
   <footer>
-    <p>© Fanpage IT Crowd — Derechos reservados</p>
+    <p>© 2025 • Derechos reservados</p>
   </footer>
 </body>
 </html>
-
-
-
