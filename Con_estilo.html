@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Fan page de The IT Crowd — Inicio" />
   <title>Fan Page — The IT Crowd</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Mi serie favorita: The IT Crowd</h1>
+    <h1>Mi serie favorita: <span class="marca">The IT Crowd</span></h1>
     <nav aria-label="Navegación principal">
       <ul>
         <li><a href="./index.html">Inicio</a></li>
@@ -19,16 +20,16 @@
   </header>
 
   <main>
-    <section>
+    <section class="card">
       <figure>
         <img src="./imagenes/Matt_ITcrowd.png" alt="Matt, especialista en ciberseguridad, estilo The IT Crowd">
         <figcaption>Matt — El cortafuegos humano de Reynholm Industries</figcaption>
       </figure>
     </section>
 
-    <section>
+    <section class="card">
       <h2>Matt — Especialista en Ciberseguridad</h2>
-      <p>Defensa, hardening y respuesta ante incidentes</p>
+      <p class="role">Defensa, hardening y respuesta ante incidentes</p>
       <p>
         El guardián implacable de la red en Reynholm Industries. Con su buzo a rayas, gafas oscuras y una taza de café siempre en mano,
         Matt es tan divertido como estricto con la seguridad.
@@ -37,7 +38,7 @@
         Vive para cerrar vulnerabilidades, aplicar contraseñas imposibles y recordarle a Jen que los post-its no son un método de autenticación.
         Sarcástico y veloz para responder, es el “cortafuegos humano”.
       </p>
-      <ul>
+      <ul class="tags">
         <li>Seguridad</li>
         <li>Humor ácido</li>
       </ul>
@@ -49,4 +50,5 @@
   </footer>
 </body>
 </html>
+
 
