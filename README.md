@@ -36,19 +36,6 @@ Incluye páginas sobre los personajes, capítulos destacados y un formulario de 
 
 ---
 
-## 📸 Capturas de pantalla
-
-### 🔹 Página principal
-![Index](./imagenes/banner.jpg)
-
-### 🔹 Personajes
-![Personajes](./imagenes/Matt_ITcrowd.png)
-
-### 🔹 Capítulos
-![Capitulos](./imagenes/grupo_it.png)
-
----
-
 ## 🚀 Cómo usar
 
 1. Clonar el repositorio:
