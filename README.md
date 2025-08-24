@@ -53,4 +53,4 @@ Incluye páginas sobre los personajes, capítulos destacados y un formulario de 
 
 1. Clonar el repositorio:
    ```bash
-   git clone [https://github.com/tuusuario/fanpage-itcrowd.git](https://github.com/mattposs/Desarrollo-DisenoWeb_NM_MPP_Clase2.git)
+   git clone https://github.com/mattposs/Desarrollo-DisenoWeb_NM_MPP_Clase2.git
