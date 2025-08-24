@@ -4,88 +4,104 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Fan page de The IT Crowd — Personajes" />
-  <title>Personajes — The IT Crowd</title>
-  <style>
-    :root{
-      --azul:#003366; --amarillo:#FFD700; --morado:#8B008B; --verde:#006400; --rojo:#FF0000; --gris-card:#f9f9f9;
-    }
-    *{box-sizing:border-box}
-    body{font-family:Arial,sans-serif;background:#fff;color:#222;margin:0}
-    header{background:var(--azul);color:#fff;padding:16px 0}
-    .wrap{max-width:1000px;margin:0 auto;padding:0 16px}
-    header h1{margin:0 0 8px;text-align:center;font-size:1.6rem;line-height:1.2}
-    .marca{color:var(--amarillo);font-weight:700}
-    nav{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-    nav a{color:#fff;text-decoration:none;font-weight:700;padding:6px 10px;border-radius:8px}
-    nav a:hover{text-decoration:underline}
-    main{max-width:1000px;margin:24px auto;padding:0 16px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-    .card{background:var(--gris-card);border:2px solid var(--azul);border-radius:12px;padding:16px;display:flex;flex-direction:column}
-    figure{margin:0}
-    img{width:100%;height:auto;display:block;border-radius:10px;border:3px solid var(--amarillo)}
-    h2{margin:10px 0 6px;color:var(--morado);font-size:1.1rem}
-    p{margin:0 0 8px}
-    footer{margin-top:24px;text-align:center;color:#fff;background:var(--azul);padding:18px}
-  </style>
+  <title>Personajes — Fan Page IT Crowd</title>
+  <link rel="stylesheet" href="Style.css">
 </head>
 <body>
   <header>
-    <div class="wrap">
-      <h1>Personajes — <span class="marca">The IT Crowd</span></h1>
-      <nav aria-label="Navegación principal">
-        <a href="./index.html">Inicio</a>
-        <a href="./personajes.html" aria-current="page">Personajes</a>
-        <a href="./capitulos.html">Capítulos</a>
-      </nav>
-    </div>
+    <h1>Fan Page The IT Crowd</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Personajes.html" class="activo">Personajes</a></li>
+        <li><a href="Capitulos.html">Capítulos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <section class="grid">
-      <article class="card">
-        <figure>
-          <img src="./imagenes/roy.jpg" alt="Roy Trenneman">
-        </figure>
-        <h2>Roy Trenneman</h2>
-        <p>Soporte técnico con actitud sarcástica. Su frase célebre: “¿Probaste apagarlo y volverlo a encender?”.</p>
-      </article>
+  <main class="container grid">
+    <!-- Roy -->
+    <article class="card">
+      <img src="./imagenes/Roy Trenneman.jpg" alt="Roy Trenneman">
+      <h2>Roy Trenneman</h2>
+      <p class="role">Soporte técnico sarcástico</p>
+      <p>Su frase célebre: <em>“¿Probaste apagarlo y volverlo a encender?”</em></p>
+      <ul class="tags">
+        <li class="red">Soporte</li>
+        <li class="yellow">Sarcasmo</li>
+      </ul>
+    </article>
 
-      <article class="card">
-        <figure>
-          <img src="./imagenes/moss.jpg" alt="Maurice Moss">
-        </figure>
-        <h2>Maurice Moss</h2>
-        <p>Genio socialmente torpe. Ama los manuales, los cables ordenados y las soluciones exactas.</p>
-      </article>
+    <!-- Moss -->
+    <article class="card">
+      <img src="./imagenes/Maurice Moss.jpg" alt="Maurice Moss">
+      <h2>Maurice Moss</h2>
+      <p class="role">Genio socialmente torpe</p>
+      <p>Ama los manuales, los cables ordenados y las soluciones exactas.</p>
+      <ul class="tags">
+        <li class="green">Genio</li>
+        <li class="yellow">Orden</li>
+      </ul>
+    </article>
 
-      <article class="card">
-        <figure>
-          <img src="./imagenes/jen.jpg" alt="Jen Barber">
-        </figure>
-        <h2>Jen Barber</h2>
-        <p>Jefa del departamento de IT (sin saber de IT). Maestra del “account management”.</p>
-      </article>
+    <!-- Jen -->
+    <article class="card">
+      <img src="./imagenes/Jen Barber.jpg" alt="Jen Barber">
+      <h2>Jen Barber</h2>
+      <p class="role">Jefa del departamento de IT</p>
+      <p>Maestra del <em>account management</em>, aunque no sabe nada de informática.</p>
+      <ul class="tags">
+        <li class="red">Liderazgo</li>
+        <li class="yellow">Creatividad</li>
+      </ul>
+    </article>
 
-      <article class="card">
-        <figure>
-          <img src="./imagenes/richmond.jpg" alt="Richmond Avenal">
-        </figure>
-        <h2>Richmond Avenal</h2>
-        <p>Gótico que vive en el cuarto del servidor. Misterioso, filosófico y… inesperadamente útil.</p>
-      </article>
+    <!-- Richmond -->
+    <article class="card">
+      <img src="./imagenes/Richmond Avenal.jpg" alt="Richmond Avenal">
+      <h2>Richmond Avenal</h2>
+      <p class="role">El gótico misterioso</p>
+      <p>Vive en el cuarto del servidor. Misterioso, filosófico y… inesperadamente útil.</p>
+      <ul class="tags">
+        <li class="red">Oscuro</li>
+        <li class="green">Sabiduría</li>
+      </ul>
+    </article>
 
-      <article class="card">
-        <figure>
-          <img src="./imagenes/douglas.jpg" alt="Douglas Reynholm">
-        </figure>
-        <h2>Douglas Reynholm</h2>
-        <p>Excéntrico jefe de la empresa. Carismático, impredecible y siempre al borde del papelón.</p>
-      </article>
-    </section>
+    <!-- Douglas -->
+    <article class="card">
+      <img src="./imagenes/Douglas Reynholm.jpg" alt="Douglas Reynholm">
+      <h2>Douglas Reynholm</h2>
+      <p class="role">Excéntrico jefe de la empresa</p>
+      <p>Carismático, impredecible y siempre al borde del papelón.</p>
+      <ul class="tags">
+        <li class="yellow">Carisma</li>
+        <li class="red">Excentricidad</li>
+      </ul>
+    </article>
+
+    <!-- Matt -->
+    <article class="card">
+      <img src="./imagenes/Matt_ITcrowd.png" alt="Matt Especialista en Ciberseguridad">
+      <h2>Matt — Especialista en Ciberseguridad</h2>
+      <p class="role">El cortafuegos humano de Reynholm Industries</p>
+      <p>
+        El guardián implacable de la red en Reynholm Industries. Con su buzo a rayas, gafas oscuras y una taza de café siempre en mano, Matt es tan divertido como estricto con la seguridad.
+      </p>
+      <p>
+        Vive para cerrar vulnerabilidades, aplicar contraseñas imposibles y recordarle a Jen —con bromas constantes— que los post-its no son un método de autenticación. Sarcástico, rápido para responder y letal contra cualquier amenaza digital, es el “cortafuegos humano” que mantiene a salvo los servidores… y a todos los que se conectan a ellos.
+      </p>
+      <ul class="tags">
+        <li class="red">Seguridad</li>
+        <li class="yellow">Humor ácido</li>
+      </ul>
+    </article>
   </main>
 
   <footer>
-    <p>© 2025 • Derechos reservados</p>
+    <p>© 2025 Fan Page - The IT Crowd | Proyecto académico</p>
   </footer>
 </body>
 </html>
+

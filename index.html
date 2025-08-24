@@ -4,71 +4,68 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Fan page de The IT Crowd — Inicio" />
-  <title>Fan Page — The IT Crowd</title>
-  <style>
-    :root{
-      --azul:#003366; --amarillo:#FFD700; --morado:#8B008B; --verde:#006400; --rojo:#FF0000; --gris-card:#f9f9f9;
-    }
-    *{box-sizing:border-box}
-    body{font-family:Arial,sans-serif;background:#fff;color:#222;margin:0}
-    header{background:var(--azul);color:#fff;padding:16px 0}
-    .wrap{max-width:900px;margin:0 auto;padding:0 16px}
-    header h1{margin:0 0 8px;text-align:center;font-size:1.6rem;line-height:1.2}
-    .marca{color:var(--amarillo);font-weight:700}
-    nav{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-    nav a{color:#fff;text-decoration:none;font-weight:700;padding:6px 10px;border-radius:8px}
-    nav a:hover{text-decoration:underline}
-    nav a:focus-visible{outline:3px solid #fff;outline-offset:2px;background:rgba(255,255,255,.08)}
-    main{max-width:900px;margin:24px auto;padding:0 16px;display:grid;gap:20px;align-items:start}
-    @media (min-width:760px){main{grid-template-columns:1fr 1fr}}
-    .card{background:var(--gris-card);border:2px solid var(--azul);border-radius:12px;padding:16px}
-    figure{margin:0}
-    img{width:100%;height:auto;display:block;border-radius:10px;border:3px solid var(--amarillo)}
-    figcaption{margin-top:8px;color:#555}
-    h2{margin:0 0 8px;color:var(--morado);font-size:1.25rem}
-    .role{font-weight:700;color:var(--verde);margin:0 0 10px}
-    .tag{display:inline-block;background:var(--rojo);color:#fff;padding:4px 10px;border-radius:999px;font-size:.9rem;margin-top:6px}
-    footer{margin-top:24px;text-align:center;color:#fff;background:var(--azul);padding:18px}
-  </style>
+  <title>Inicio — Fan Page IT Crowd</title>
+  <link rel="stylesheet" href="Style.css">
 </head>
 <body>
   <header>
-    <div class="wrap">
-      <h1>Mi serie favorita: <span class="marca">The IT Crowd</span></h1>
+    <div class="container topbar">
+      <h1>Fan Page <span style="color:var(--text-muted)">The IT Crowd</span></h1>
       <nav aria-label="Navegación principal">
-        <a href="./index.html">Inicio</a>
-        <a href="./personajes.html">Personajes</a>
-        <a href="./capitulos.html">Capítulos</a>
+        <ul>
+          <li><a href="index.html" class="activo">Inicio</a></li>
+          <li><a href="Personajes.html">Personajes</a></li>
+          <li><a href="Capitulos.html">Capítulos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="card">
+  <main class="container mt-3">
+    <!-- Banner superior -->
+    <section class="hero" style="padding:0; position:relative; overflow:hidden;">
+      <img src="./imagenes/banner.jpg" alt="Banner The IT Crowd" style="border-radius:14px; width:100%; height:auto;">
+    </section>
+
+    <!-- Hero con texto -->
+    <section class="hero mt-3">
+      <h2>Bienvenido a la Fan Page de <strong>The IT Crowd</strong></h2>
+      <p>
+        Info de los <strong>personajes</strong>, episodios destacados y un espacio para dejar tus comentarios.
+      </p>
+      <div class="mt-2">
+        <a class="btn btn-cta" href="Capitulos.html">Ver capítulos</a>
+        <a class="btn btn-ghost" href="Personajes.html" style="margin-left:8px;">Conocer personajes</a>
+      </div>
+    </section>
+
+    <!-- Imagen principal centrada y grande -->
+    <section class="card mt-3 img-principal">
       <figure>
-        <img src="./imagenes/Matt_ITcrowd.png" alt="Matt, especialista en ciberseguridad, estilo The IT Crowd">
-        <figcaption>Matt — El cortafuegos humano de Reynholm Industries</figcaption>
+        <img src="./imagenes/grup_horizontal.png" alt="Matt estilo The IT Crowd, Reynholm Industries">
       </figure>
     </section>
 
-    <section class="card">
-      <h2>Matt — Especialista en Ciberseguridad</h2>
-      <p class="role">Defensa, hardening y respuesta ante incidentes</p>
-      <p>
-        El guardián implacable de la red en Reynholm Industries. Con su buzo a rayas, gafas oscuras y una taza de café siempre en mano,
-        Matt es tan divertido como estricto con la seguridad.
+    <!-- Tarjeta destacada -->
+    <section class="card mt-3">
+      <h3>Sobre la serie</h3>
+      <p class="mt-1" style="color:var(--text-muted);">
+        Sitcom británica creada por Graham Linehan. Roy y Moss son dos cracks de IT con pocas skills sociales; Jen, su jefa,
+        no sabe de informática… y así arrancan las mejores escenas en el sótano de Reynholm Industries.
       </p>
-      <p>
-        Vive para cerrar vulnerabilidades, aplicar contraseñas imposibles y recordarle a Jen que los post‑its no son un método de autenticación.
-        Sarcástico y veloz para responder, es el “cortafuegos humano”.
-      </p>
-      <span class="tag">Seguridad</span>
-      <span class="tag">Humor ácido</span>
+      <ul class="tags">
+        <li>Humor geek</li>
+        <li>Británica</li>
+        <li>Clásico de culto</li>
+      </ul>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 • Derechos reservados</p>
+    <p>© 2025 Fan Page - The IT Crowd | Proyecto académico</p>
   </footer>
 </body>
 </html>
+
+

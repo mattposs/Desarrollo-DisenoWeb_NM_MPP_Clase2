@@ -3,58 +3,58 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Fan page de The IT Crowd — Capítulos destacados" />
-  <title>Capítulos — The IT Crowd</title>
-  <style>
-    :root{
-      --azul:#003366; --amarillo:#FFD700; --morado:#8B008B; --gris-card:#f9f9f9;
-    }
-    *{box-sizing:border-box}
-    body{font-family:Arial,sans-serif;background:#fff;color:#222;margin:0}
-    header{background:var(--azul);color:#fff;padding:16px 0}
-    .wrap{max-width:900px;margin:0 auto;padding:0 16px}
-    header h1{margin:0 0 8px;text-align:center;font-size:1.6rem;line-height:1.2}
-    .marca{color:var(--amarillo);font-weight:700}
-    nav{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-    nav a{color:#fff;text-decoration:none;font-weight:700;padding:6px 10px;border-radius:8px}
-    nav a:hover{text-decoration:underline}
-    main{max-width:900px;margin:24px auto;padding:0 16px}
-    .card{background:var(--gris-card);border:2px solid var(--azul);border-radius:12px;padding:16px}
-    h2{margin:0 0 12px;color:var(--morado)}
-    ul{margin:0;padding-left:18px}
-    li{margin:6px 0}
-    footer{margin-top:24px;text-align:center;color:#fff;background:var(--azul);padding:18px}
-  </style>
+  <meta name="description" content="Fan page de The IT Crowd — Capítulos" />
+  <title>Capítulos — Fan Page IT Crowd</title>
+  <link rel="stylesheet" href="Style.css">
 </head>
 <body>
   <header>
-    <div class="wrap">
-      <h1>Capítulos — <span class="marca">The IT Crowd</span></h1>
-      <nav aria-label="Navegación principal">
-        <a href="./index.html">Inicio</a>
-        <a href="./personajes.html">Personajes</a>
-        <a href="./capitulos.html" aria-current="page">Capítulos</a>
-      </nav>
-    </div>
+    <h1>Fan Page The IT Crowd</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Personajes.html">Personajes</a></li>
+        <li><a href="Capitulos.html" class="activo">Capítulos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
+  <main class="container grid">
+    <!-- Episodios -->
     <section class="card">
-      <h2>Selección de episodios</h2>
-      <ul>
-        <li>S01E01 — Yesterday’s Jam</li>
-        <li>S01E02 — Calamity Jen</li>
-        <li>S02E01 — The Work Outing</li>
-        <li>S02E06 — Men Without Women</li>
-        <li>S03E04 — The Speech</li>
-        <li>S04E01 — Jen the Fredo</li>
-        <li>Special — The Internet Is Coming</li>
-      </ul>
+      <h2>S01E01 — Yesterday’s Jam</h2>
+      <iframe src="https://www.youtube.com/embed/IkAiq1N3Dhw" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section class="card">
+      <h2>S01E02 — Calamity Jen</h2>
+      <iframe src="https://www.youtube.com/embed/Z0dvAy1puIE" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section class="card">
+      <h2>S02E01 — The Work Outing</h2>
+      <iframe src="https://www.youtube.com/embed/KrL9nGyUetM" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section class="card">
+      <h2>S02E06 — Men Without Women</h2>
+      <iframe src="https://www.youtube.com/embed/URDJ2O1Swbc" frameborder="0" allowfullscreen></iframe>
     </section>
   </main>
 
+  <!-- Canal oficial -->
+  <section class="canal-oficial">
+    <a href="https://www.youtube.com/@TheITCrowdChannel" target="_blank">
+      <img src="./imagenes/logo_itcrowd.png" alt="Canal oficial The IT Crowd">
+      <span>Visitar canal oficial de The IT Crowd</span>
+    </a>
+  </section>
+
   <footer>
-    <p>© 2025 • Derechos reservados</p>
+    <p>© 2025 Fan Page - The IT Crowd | Proyecto académico</p>
   </footer>
 </body>
 </html>
+
+
